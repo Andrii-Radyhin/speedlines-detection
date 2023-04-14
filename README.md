@@ -12,28 +12,6 @@ So:
  - Loss function: FocalLoss (alpha = 0.8 gamma = 2), DiceLoss, bce_jaccard_loss
  - Optimizer: Adam (lr = 1e-3)
  - learning scheduler: ReduceLROnPlateau(factor=0.5, patience=5)
- 
- B0+UNET shuffle FocalLoss
-
-Epoch 00049: val_loss did not improve from 0.00104
-Epoch 50/50
-200/200 [==============================] - 53s 265ms/step - loss: 0.0028 - iou_score: 0.3847 - dice_metric: 0.5549 - val_loss: 0.0010 - val_iou_score: 0.5553 - val_dice_metric: 0.7139
-
-Epoch 00049: val_loss did not improve from 0.00103
-Epoch 50/50
-200/200 [==============================] - 54s 270ms/step - loss: 0.2617 - iou_score: 0.7623 - dice_metric: 0.8648 - val_loss: 0.0834 - val_iou_score: 0.9251 - val_dice_metric: 0.9611
-
-Epoch 00050: val_loss did not improve from 0.00103
-
-model.compile(optimizer=tf.keras.optimizers.Adam(0.001), loss=sm.losses.bce_jaccard_loss, metrics = [sm.metrics.iou_score, dice_metric] )
-
-Epoch 00049: val_loss did not improve from 0.03790
-Epoch 50/50
-160/160 [==============================] - 43s 270ms/step - loss: 0.1304 - iou_score: 0.7699 - dice_metric: 0.8696 - val_loss: 0.0391 - val_iou_score: 0.9253 - val_dice_metric: 0.9612
-
-Epoch 00050: val_loss did not improve from 0.03790
-
-
 
 ## General thoughts
 
