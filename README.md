@@ -48,17 +48,19 @@ I need to add I've been bounded with Cuda memory capacity, so basicaly I could n
 
 ## Results
 
-| Encoder | IoU | DiceBCELoss | Mask Resolution | Epochs |
+| Encoder | IoU | dice_metric | Mask Resolution | Epochs |
 | ------ | ------ | ------ | ------ | ------ |
-| ResNet-50 | 0.4132 |     | (256, 1600) |            |    |
-| EfficientNet-B3  | 0.513  |      0.444        | (256, 768)| 11 |
-| EfficientNet-B4  | 0.597 | 0.36 | (256, 768) |    37     |
+| ResNet-50 | ? |  ?   | (256, 256) |       50     |
+| EfficientNet-B0  | 0.9253 | 0.9612 | (256, 256)| 50 |
+| EfficientNet-B1  | ? | ? | (256, 256) |    50    |
 
 
 
 Inferences for validation data:
 
- - EfficientNet-B4
+Simple case:
+
+ - EfficientNet-B0
 
  Example 1:
  ![alt text](/images/pic_1.png)
@@ -71,3 +73,17 @@ Inferences for validation data:
  
  Example 4: 
  ![alt text](/images/pic_4.png)
+ 
+ Combined case:
+ 
+  Example 1:
+ ![alt text](/images/pic_5.png)
+
+ Example 2: 
+ ![alt text](/images/pic_6.png)
+ 
+ Example 3: 
+ ![alt text](/images/pic_7.png)
+ 
+ Example 4: 
+ ![alt text](/images/pic_8.png)
