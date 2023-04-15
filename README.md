@@ -43,7 +43,7 @@ Inferences for validation data (EfficientNet-B0):
  ![alt text](/imgs/pic_(1).jpg)
 
  Example 2: 
- ![alt text](/imgss/pic_(4).jpg)
+ ![alt text](/imgs/pic_(4).jpg)
  
  Example 3: 
  ![alt text](/imgs/pic_(2).jpg)
