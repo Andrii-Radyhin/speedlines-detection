@@ -23,14 +23,15 @@ All of the encoders were pretrained on ImageNet. However, I do believe there is 
 Moreover, we can try some multi-scale training methods to increase image resolution from small to large, but I haven't done that.
 
 I need to add I've been bounded with Cuda memory capacity, so basicaly I could not try bigger encoders for batch size > 16.
+val_iou_score: 0.9212 - val_dice_metric: 0.9590
 
 ## Results
 
 | Encoder | IoU | dice_metric | Mask Resolution | Epochs |
 | ------ | ------ | ------ | ------ | ------ |
-| ResNet-50 | ? |  ?   | (256, 256) |       50     |
+| ResNet-34 | 0.9078 |  0.9516   | (256, 256) |       50     |
 | EfficientNet-B0  | 0.9253 | 0.9612 | (256, 256)| 50 |
-| EfficientNet-B1  | ? | ? | (256, 256) |    50    |
+| EfficientNet-B1  | 0.9212 | 0.9590 | (256, 256) |    50    |
 
 
 
