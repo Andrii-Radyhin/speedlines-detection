@@ -42,27 +42,25 @@ Simple case:
  - EfficientNet-B0
 
  Example 1:
- ![alt text](/images/pic_1.png)
+ ![alt text](/imgs/pic_(1).png)
 
  Example 2: 
- ![alt text](/images/pic_2.png)
+ ![alt text](/imgss/pic_(4).png)
  
  Example 3: 
- ![alt text](/images/pic_3.png)
+ ![alt text](/imgs/pic_(2).png)
  
  Example 4: 
- ![alt text](/images/pic_4.png)
+ ![alt text](/imgs/pic_(9).png)
  
  Combined case:
  
   Example 1:
- ![alt text](/images/pic_5.png)
+ ![alt text](/imgs/pic_(13).png)
 
  Example 2: 
- ![alt text](/images/pic_6.png)
+ ![alt text](/imgs/pic_(11).png)
  
  Example 3: 
- ![alt text](/images/pic_7.png)
+ ![alt text](/imgs/pic_(8).png)
  
- Example 4: 
- ![alt text](/images/pic_8.png)
