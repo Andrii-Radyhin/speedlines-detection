@@ -37,30 +37,31 @@ val_iou_score: 0.9212 - val_dice_metric: 0.9590
 
 Inferences for validation data:
 
-Simple case:
+Combined case:
+
 
  - EfficientNet-B0
 
  Example 1:
- ![alt text](/imgs/pic_(1).png)
+ ![alt text](/imgs/pic_(1).jpg)
 
  Example 2: 
- ![alt text](/imgss/pic_(4).png)
+ ![alt text](/imgss/pic_(4).jpg)
  
  Example 3: 
- ![alt text](/imgs/pic_(2).png)
+ ![alt text](/imgs/pic_(2).jpg)
  
  Example 4: 
- ![alt text](/imgs/pic_(9).png)
+ ![alt text](/imgs/pic_(9).jpg)
  
- Combined case:
+Simple case:
  
   Example 1:
- ![alt text](/imgs/pic_(13).png)
+ ![alt text](/imgs/pic_(13).jpg)
 
  Example 2: 
- ![alt text](/imgs/pic_(11).png)
+ ![alt text](/imgs/pic_(11).jpg)
  
  Example 3: 
- ![alt text](/imgs/pic_(8).png)
+ ![alt text](/imgs/pic_(8).jpg)
  
