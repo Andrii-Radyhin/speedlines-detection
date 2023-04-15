@@ -8,7 +8,7 @@ First, let's identify the main architecture. UNet is a bit better for this probl
 
 So:
  - Architecture: UNet
- - Encoder: EfficientNet-B0,B1; ResNet-50
+ - Encoder: EfficientNet-B0,B1; ResNet-34
  - Loss function: FocalLoss (alpha = 0.8 gamma = 2), DiceLoss, bce_jaccard_loss
  - Optimizer: Adam (lr = 1e-3)
  - learning scheduler: ReduceLROnPlateau(factor=0.5, patience=5)
