@@ -1,9 +1,9 @@
 # speedlines-detection
 
-Abstract: This repo includes a pipeline for training UNet with different encoders to detect compressor speedlines. Moreover, trained model are provided LINK
+Abstract: This repo includes a pipeline for training UNet with different encoders to detect compressor speedlines. Moreover, trained [models](https://drive.google.com/drive/folders/1XjiCYWGAfoECp0RebKn6oFC2-9D_x4mw?usp=sharing) are provided.
 Dataset already explained in task text and it seems okay. So i do not see any obstacles not to skip EDA.
 
-Models can be downloaded [here](https://drive.google.com/drive/folders/1XjiCYWGAfoECp0RebKn6oFC2-9D_x4mw?usp=sharing)
+
 
 ## Plan of research
 First, let's identify the main architecture. UNet is a bit better for this problem than Mask R-CNN. It is enough to complete the task, without the need to use more complex instance segmentation like Mask R-CNN. I've conducted a research on several Kaggle kernels and papers from sources like arxiv.com.
