@@ -35,12 +35,9 @@ val_iou_score: 0.9212 - val_dice_metric: 0.9590
 
 
 
-Inferences for validation data:
+Inferences for validation data (EfficientNet-B0):
 
-Combined case:
-
-
- - EfficientNet-B0
+ - Combined case:
 
  Example 1:
  ![alt text](/imgs/pic_(1).jpg)
@@ -54,7 +51,7 @@ Combined case:
  Example 4: 
  ![alt text](/imgs/pic_(9).jpg)
  
-Simple case:
+ - Simple case:
  
   Example 1:
  ![alt text](/imgs/pic_(13).jpg)
