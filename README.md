@@ -4,22 +4,19 @@ Abstract: This repo includes a pipeline for training UNet with different encoder
 Dataset already explained in task text and it seems okay. So i do not see any obstacles not to skip EDA.
 
 
-
 ## Plan of research
 First, let's identify the main architecture. UNet is a bit better for this problem than Mask R-CNN. It is enough to complete the task, without the need to use more complex instance segmentation like Mask R-CNN. I've conducted a research on several Kaggle kernels and papers from sources like arxiv.com.
 
 So:
  - Architecture: UNet
  - Encoder: EfficientNet-B0,B1; ResNet-34
- - Loss function: FocalLoss (alpha = 0.8 gamma = 2), DiceLoss, bce_jaccard_loss
+ - Loss function: DiceLoss, bce_jaccard_loss
  - Optimizer: Adam (lr = 1e-3)
  - learning scheduler: ReduceLROnPlateau(factor=0.5, patience=5)
 
 ## General thoughts
 
-Images was
-
-I've tried DiceLoss, bce_jaccard_loss.
+I've tried DiceLoss, bce_jaccard_loss:
 
 The Dice coefficient, or Dice-Sørensen coefficient, is a common metric for pixel segmentation that can also be modified to act as a loss function:
 
@@ -51,6 +48,16 @@ I need to add I've been bounded with Cuda memory capacity, so basicaly I could n
 | EfficientNet-B0  | 0.9253 | 0.9612 | (256, 256)| 50 |
 | EfficientNet-B1  | 0.9212 | 0.9590 | (256, 256) |    50    |
 
+Number of epochs was choosen to see if reducing of learning rate can give us better results. I have also used transforms from albumentations to provide more images.
+In average, 15 epochs seems enough to train the model. Graphs as example for EfficientNet-B0 encoder are provided:
+
+![alt text](/imgs/Accuracy.jpg)
+
+
+![alt text](/imgs/Loss.jpg)
+
+Overviewing this graphics we do not see any overfitting. This means our model is stable whether it is validation data or train data.
+Reducing learning rate also have no too much influence on our model. I believe that increasing of batch size and fine-tuning encoders on the whole dataset (classification combined/separated) should have relatively significant impact on our results.
 
 
 Inferences for validation data (EfficientNet-B0):
