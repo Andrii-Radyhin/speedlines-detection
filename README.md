@@ -23,7 +23,6 @@ The Dice coefficient, or Dice-Sørensen coefficient, is a common metric for pixe
  ![alt text](/imgs/Dice.PNG)
  
 bce_jaccard_loss is a loss combination: binary_crossentropy + jaccard_loss.
-
 The best results have been obtained with bce_jaccard_loss in this case.
 
 All of the encoders were pretrained on ImageNet. However, I do believe there is **one more trick** that can be fruitful: we can fine-tune encoders on the whole dataset (classification combined/separated). This way we can get some better results, but there is no structured dataset at all.
