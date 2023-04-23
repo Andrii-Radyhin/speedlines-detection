@@ -23,7 +23,7 @@ I've tried DiceLoss, bce_jaccard_loss.
 
 The Dice coefficient, or Dice-Sørensen coefficient, is a common metric for pixel segmentation that can also be modified to act as a loss function:
 
- ![alt text](/imgs/Dice.jpg)
+ ![alt text](/imgs/Dice.PNG)
  
 bce_jaccard_loss is a loss combination: binary_crossentropy + jaccard_loss.
 
