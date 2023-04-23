@@ -17,15 +17,31 @@ So:
 
 ## General thoughts
 
-I've tried DiceLoss, bce_jaccard_loss, FocalLoss
+Images was
+
+I've tried DiceLoss, bce_jaccard_loss.
+
+The Dice coefficient, or Dice-Sørensen coefficient, is a common metric for pixel segmentation that can also be modified to act as a loss function:
+
+ ![alt text](/imgs/Dice.jpg)
+ 
+bce_jaccard_loss is a loss combination: binary_crossentropy + jaccard_loss.
+
 The best results have been obtained with bce_jaccard_loss in this case.
 
 All of the encoders were pretrained on ImageNet. However, I do believe there is **one more trick** that can be fruitful: we can fine-tune encoders on the whole dataset (classification combined/separated). This way we can get some better results, but there is no structured dataset at all.
 
+The encoder part of the EfficientNet model is deeper than the decoder in our case, which means that the bulk of the computation occurs in the encoder layers. 
+Therefore, it may be beneficial to increase the learning rate coefficient for the encoder to speed up the convergence of the model during training.
+
+However, using the same image resolution for all versions of the EfficientNet model may not be optimal. This is because increasing the model size and depth can cause the gradients to become more unstable and difficult to propagate through the network, particularly if the image resolution remains constant. As a result, it may be necessary to increase the image resolution as well to maintain a balance between model complexity and training stability.
+
+In the case of the UNet model with EfficientNet-B1/B2/B3 encoders, increasing the image resolution may be necessary to achieve optimal performance. Additionally, gradient decay may need to be adjusted to ensure that the gradients remain stable and propagate effectively through the deeper layers of the model.
+
 Moreover, we can try some multi-scale training methods to increase image resolution from small to large, but I haven't done that.
 
-I need to add I've been bounded with Cuda memory capacity, so basicaly I could not try bigger encoders for batch size > 16.
-val_iou_score: 0.9212 - val_dice_metric: 0.9590
+I need to add I've been bounded with Cuda memory capacity, so basicaly I could not try bigger encoders for batch size > 16. That's why i have not tried bigger resolutions.
+
 
 ## Results
 
