@@ -34,7 +34,7 @@ and remove possible gradient decay.
 However, using the same image resolution for all versions of the EfficientNet model may not be optimal. This is because increasing the model size and depth can cause the gradients to become more unstable and difficult to propagate through the network, particularly if the image resolution remains constant. As a result, it may be necessary to increase the image resolution as well to maintain a balance between model complexity and training stability.
 
 In the case of the UNet model with EfficientNet-B1/B2/B3 encoders, increasing the image resolution may be necessary to achieve optimal performance
-(because of the main idea of EfficientNet: increasing model size along with resolution).
+**(because of the main idea of EfficientNet: increasing model size along with resolution)**.
 
 Moreover, we can try some multi-scale training methods to increase image resolution from small to large, but I haven't done that.
 
