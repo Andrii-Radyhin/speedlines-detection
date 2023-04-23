@@ -38,7 +38,7 @@ In the case of the UNet model with EfficientNet-B1/B2/B3 encoders, increasing th
 
 Moreover, we can try some multi-scale training methods to increase image resolution from small to large, but I haven't done that.
 
-I need to add I've been bounded with Cuda memory capacity, so basicaly I could not try bigger encoders for batch size > 16. That's why i have not tried bigger resolutions.
+I need to add I've been bounded with Cuda memory capacity, so basicaly I could not try bigger encoders for batch size > 16. That's why i have not tried bigger (original) resolutions.
 
 
 ## Results
