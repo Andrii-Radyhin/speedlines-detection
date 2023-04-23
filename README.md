@@ -57,7 +57,7 @@ In average, 15 epochs seems enough to train the model. Graphs as example for Eff
 ![alt text](/imgs/lr.PNG)
 
 Overviewing this graphics we do not see any overfitting. This means our model is stable whether it is validation data or train data.
-Reducing learning rate also have no too much influence on our model. I believe that increasing of batch size and fine-tuning encoders on the whole dataset (classification combined/separated) should have relatively significant impact on our results.
+Reducing learning rate also have not too much influence on our model, but there is also a field to try changing losses during training: Tversky and Focal-Tversky loss benefit from very low learning rates, of the order 5e-5 to 1e-4. I believe that increasing of batch size and fine-tuning encoders on the whole dataset (classification combined/separated) should have relatively significant impact on our results.
 
 
 Inferences for validation data (EfficientNet-B0):
