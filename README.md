@@ -54,6 +54,8 @@ In average, 15 epochs seems enough to train the model. Graphs as example for Eff
 
 ![alt text](/imgs/Loss.PNG)
 
+![alt text](/imgs/lr.PNG)
+
 Overviewing this graphics we do not see any overfitting. This means our model is stable whether it is validation data or train data.
 Reducing learning rate also have no too much influence on our model. I believe that increasing of batch size and fine-tuning encoders on the whole dataset (classification combined/separated) should have relatively significant impact on our results.
 
