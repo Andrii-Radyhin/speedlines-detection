@@ -51,10 +51,9 @@ I need to add I've been bounded with Cuda memory capacity, so basicaly I could n
 Number of epochs was choosen to see if reducing of learning rate can give us better results. I have also used transforms from albumentations to provide more images.
 In average, 15 epochs seems enough to train the model. Graphs as example for EfficientNet-B0 encoder are provided:
 
-![alt text](/imgs/Accuracy.jpg)
+![alt text](/imgs/Accuracy.PNG)
 
-
-![alt text](/imgs/Loss.jpg)
+![alt text](/imgs/Loss.PNG)
 
 Overviewing this graphics we do not see any overfitting. This means our model is stable whether it is validation data or train data.
 Reducing learning rate also have no too much influence on our model. I believe that increasing of batch size and fine-tuning encoders on the whole dataset (classification combined/separated) should have relatively significant impact on our results.
