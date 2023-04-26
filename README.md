@@ -5,9 +5,6 @@ Dataset already explained in task text and it seems okay. So i do not see any ob
 
 
 ## Plan of research
-First, let's identify the main architecture. UNet is a bit better for this problem than Mask R-CNN. It is enough to complete the task, without the need to use more complex instance segmentation like Mask R-CNN. I've conducted a research on several Kaggle kernels and papers from sources like arxiv.com.
-
-So:
  - Architecture: UNet
  - Encoder: EfficientNet-B0,B1; ResNet-34
  - Loss function: DiceLoss, bce_jaccard_loss
